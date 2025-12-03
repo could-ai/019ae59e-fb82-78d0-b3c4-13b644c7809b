@@ -1,0 +1,87 @@
+import '../models/ad_item.dart';
+
+class MockData {
+  static final List<String> regions = [
+    'Összes',
+    'Budapest',
+    'Pest megye',
+    'Debrecen',
+    'Szeged',
+    'Miskolc',
+    'Pécs',
+    'Győr',
+  ];
+
+  static final List<AdItem> ads = [
+    AdItem(
+      id: '1',
+      title: 'Használt iPhone 13 Pro',
+      description: 'Kiváló állapotban lévő iPhone 13 Pro, 128GB, kártyafüggetlen. Dobozával és minden tartozékával együtt eladó. Akkumulátor 92%.',
+      price: 185000,
+      region: 'Budapest',
+      category: 'Elektronika',
+      imageUrl: 'https://placehold.co/600x400/png?text=iPhone+13',
+      date: DateTime.now().subtract(const Duration(hours: 2)),
+    ),
+    AdItem(
+      id: '2',
+      title: 'Mountain Bike Kerékpár',
+      description: 'Keveset használt hegyi kerékpár, 21 sebességes, tárcsafékes. Ideális túrázáshoz és városi közlekedésre is.',
+      price: 45000,
+      region: 'Pest megye',
+      category: 'Sport',
+      imageUrl: 'https://placehold.co/600x400/png?text=Kerekpar',
+      date: DateTime.now().subtract(const Duration(days: 1)),
+    ),
+    AdItem(
+      id: '3',
+      title: 'Kiadó lakás a belvárosban',
+      description: '2 szobás, felújított téglalakás kiadó hosszú távra. Gépesített, bútorozott. Alacsony rezsi.',
+      price: 150000,
+      region: 'Debrecen',
+      category: 'Ingatlan',
+      imageUrl: 'https://placehold.co/600x400/png?text=Lakas',
+      date: DateTime.now().subtract(const Duration(hours: 5)),
+    ),
+    AdItem(
+      id: '4',
+      title: 'Gamer PC konfiguráció',
+      description: 'Eladó komplett gamer gép. RTX 3060, Ryzen 5 5600X, 16GB RAM. Minden mai játékot visz.',
+      price: 280000,
+      region: 'Szeged',
+      category: 'Elektronika',
+      imageUrl: 'https://placehold.co/600x400/png?text=Gamer+PC',
+      date: DateTime.now().subtract(const Duration(days: 2)),
+    ),
+    AdItem(
+      id: '5',
+      title: 'Kanapé eladó',
+      description: 'Szürke, ágyazható kanapé eladó. Kényelmes, nincs kiülve. Szállításban nem tudok segíteni.',
+      price: 30000,
+      region: 'Budapest',
+      category: 'Bútor',
+      imageUrl: 'https://placehold.co/600x400/png?text=Kanape',
+      date: DateTime.now().subtract(const Duration(days: 3)),
+    ),
+    AdItem(
+      id: '6',
+      title: 'Téli gumi szett',
+      description: '4 db alig használt téli gumi felnivel együtt. Méret: 205/55 R16.',
+      price: 60000,
+      region: 'Győr',
+      category: 'Autó-motor',
+      imageUrl: 'https://placehold.co/600x400/png?text=Teli+Gumi',
+      date: DateTime.now().subtract(const Duration(hours: 12)),
+    ),
+    AdItem(
+      id: '7',
+      title: 'Harry Potter könyvsorozat',
+      description: 'A teljes sorozat egyben eladó. Keménytáblás kiadás, olvasatlan állapotban.',
+      price: 12000,
+      region: 'Pécs',
+      category: 'Könyv',
+      imageUrl: 'https://placehold.co/600x400/png?text=Konyvek',
+      date: DateTime.now().subtract(const Duration(days: 5)),
+    ),
+  ];
+}
